@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Jumpstart Custom is a Rails template, so you pass it in as an option when creating a new app.
+
 
 #### Requirements
 
