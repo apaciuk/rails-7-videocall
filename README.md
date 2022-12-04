@@ -69,12 +69,6 @@ gem install lefthook
 gem install ransack (esp if template not complete properly)
 gem install spreadsheet_architect (esp if template not complete properly)
 
-#### Creating a new app ("Y" overwrite the Readme) after download & unzip repo
-
-```bash
-rails new myapp -d postgresql -m template.rb
-```
-
 ❓Having trouble? Try adding `DISABLE_SPRING=1` before `rails new`. Spring will get confused if you create an app with the same name twice, and 'bundle clean --force' if any gem conflicts. 
 #### For Rails 6 remember to alter load defaults line in application.rb from 7.0 to 6.0
 
@@ -145,7 +139,7 @@ production:
 With the environment, the service and the app_id/app_secret. If this is done correctly, you should see login links
 for the services you have added to the encrypted credentials using `EDITOR=vim rails credentials:edit`
 
-##### Multi Tenant support/usage.
+##### Multi Tenant support/usage
 
 Based on [https://dev.to/kolide/a-rails-multi-tenant-strategy-thats-30-lines-and-just-works-58cd]
 
