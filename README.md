@@ -2,8 +2,6 @@
 
 ## Getting Started
 
-
-
 #### Requirements
 
 You'll need the following installed to run the template successfully:
@@ -69,7 +67,8 @@ gem install lefthook
 gem install ransack (esp if template not complete properly)
 gem install spreadsheet_architect (esp if template not complete properly)
 
-❓Having trouble? Try adding `DISABLE_SPRING=1` before `rails new`. Spring will get confused if you create an app with the same name twice, and 'bundle clean --force' if any gem conflicts. 
+❓Having trouble? Try adding `DISABLE_SPRING=1` before `rails new`. Spring will get confused if you create an app with the same name twice, and 'bundle clean --force' if any gem conflicts.
+
 #### For Rails 6 remember to alter load defaults line in application.rb from 7.0 to 6.0
 
 #### Running your app
@@ -150,13 +149,13 @@ and: include AccountOwnable in the model (not the User model)
 
 Console Examples:
 
-* Create an account in console acc = Account.create(name: "Global") - will get an id which can be used in subsequent models account_id column.
+- Create an account in console acc = Account.create(name: "Global") - will get an id which can be used in subsequent models account_id column.
 
-* reload!
+- reload!
 
-* Current.account=1 (or uuid no if uuids)
+- Current.account=1 (or uuid no if uuids)
 
-* t 1  to switch to tenant id 1
+- t 1 to switch to tenant id 1
 
 Read article for more tips
 
