@@ -1,6 +1,6 @@
 # videocall
 
-## Getting Started
+## App Getting Started
 
 #### Requirements
 
