@@ -19,7 +19,7 @@
 #  reset_password_token       :string
 #  role                       :integer          default("user")
 #  sign_in_count              :integer          default(0), not null
-#  state                      :integer          default(0)
+#  state                      :integer          default("offline")
 #  created_at                 :datetime         not null
 #  updated_at                 :datetime         not null
 #

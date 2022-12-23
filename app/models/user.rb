@@ -19,7 +19,7 @@
 #  reset_password_token       :string
 #  role                       :integer          default("user")
 #  sign_in_count              :integer          default(0), not null
-#  state                      :integer          default(0)
+#  state                      :integer          default("offline")
 #  created_at                 :datetime         not null
 #  updated_at                 :datetime         not null
 #
@@ -42,7 +42,11 @@ class User < ApplicationRecord
   has_many :services
   belongs_to :account, optional: true
 
-
+  # Online/Offline state
+  enum state: { 
+    offline: 0, 
+    online: 1 
+  }
 # Roles, add other roles as required
   enum role: {
     user: 0,
@@ -55,6 +59,6 @@ class User < ApplicationRecord
     self.role ||= :user
   end 
 
- # attr_accessor :username, :email, :password, :password_confirmation, :remember_me, :role, :first_name, :last_name, :github_link, :avatar
+# attr_accessor :username, :email, :password, :password_confirmation, :remember_me, :role, :first_name, :last_name, :github_link, :avatar
 
 end
